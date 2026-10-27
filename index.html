@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,52 +9,92 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site header and navigation -->
   <header class="site-header">
     <nav class="nav-wrap" aria-label="Main navigation">
       <a class="brand" href="index.html">VJ. PORTFOLIO</a>
+
       <div class="nav-actions">
         <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       </div>
+
       <div class="nav-links" id="main-nav">
-        <a href="index.html">Home</a><a href="about.html">About Me</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
   </header>
+
   <main id="main-content">
+    <!-- Hero section -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
           <span class="eyebrow">Network Computing · UNIMAS</span>
           <h1>Hello, I'm Vanessa.</h1>
-          <p>I am a Network Computing student who is interested in technology, learning new skills, and working with others. This portfolio introduces my background, projects, and experiences.</p>
+          <p>
+            I am a Network Computing student who is interested in technology, learning new skills,
+            and working with others. This portfolio introduces my background, projects, and experiences.
+          </p>
           <a class="button" href="projects.html">Explore my projects</a>
           <a class="button button-outline" href="about.html">More about me</a>
         </div>
+
         <aside class="hero-card" aria-label="Short profile">
           <div class="initials" aria-hidden="true">VJ</div>
           <h2>Student · Learner · Team player</h2>
           <p>Interested in networking, cybersecurity, system administration, and web development.</p>
-          <span class="tag">Curious</span><span class="tag">Committed</span><span class="tag">Adaptable</span>
+          <span class="tag">Curious</span>
+          <span class="tag">Committed</span>
+          <span class="tag">Adaptable</span>
         </aside>
       </div>
     </section>
+
+    <!-- Welcome section with links to other pages -->
     <section class="section">
       <div class="container">
         <h2 class="section-heading">Welcome to my portfolio</h2>
-        <p class="section-intro">This website is a place to share what I am learning and the experiences that help me grow as a student and future IT professional.</p>
+        <p class="section-intro">
+          This website is a place to share what I am learning and the experiences that help me
+          grow as a student and future IT professional.
+        </p>
+
         <div class="cards">
-          <article class="card"><h3>About Me</h3><p>Learn about my education, interests, and skills.</p><p><a href="about.html">Read my profile →</a></p></article>
-          <article class="card"><h3>Projects</h3><p>Explore coursework and activities that demonstrate my learning.</p><p><a href="projects.html">View projects →</a></p></article>
-          <article class="card"><h3>Contact</h3><p>Find my contact details and send a message through the demo form.</p><p><a href="contact.html">Get in touch →</a></p></article>
+          <article class="card">
+            <h3>About Me</h3>
+            <p>Learn about my education, interests, and skills.</p>
+            <p><a href="about.html">Read my profile →</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Projects</h3>
+            <p>Explore coursework and activities that demonstrate my learning.</p>
+            <p><a href="projects.html">View projects →</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Contact</h3>
+            <p>Find my contact details and send a message through the demo form.</p>
+            <p><a href="contact.html">Get in touch →</a></p>
+          </article>
         </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container">© 2026 Vanessa Jeffery · Personal Portfolio</div></footer>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">© 2026 Vanessa Jeffery · Personal Portfolio</div>
+  </footer>
+
   <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
-  <!-- Portfolio website draft -->
 </body>
 </html>
