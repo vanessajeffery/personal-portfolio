@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects and learning experiences by Vanessa Jeffery.">
+  <title>Projects | Vanessa Jeffery Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site header and navigation -->
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html">VJ. PORTFOLIO</a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      </div>
+
+      <div class="nav-links" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Page banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Projects &amp; Experiences</h1>
+        <p>A selection of coursework and activities from my learning journey.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-heading">My work</h2>
+        <p class="section-intro">Use the category buttons to filter these entries.</p>
+
+        <!-- Category filter buttons -->
+        <div class="filter-row" role="group" aria-label="Filter projects">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="programming" aria-pressed="false">Programming</button>
+          <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Cybersecurity</button>
+          <button class="filter-button" type="button" data-filter="activities" aria-pressed="false">Activities</button>
+        </div>
+
+        <!-- Project cards -->
+        <div class="cards">
+
+          <article class="card project-card" data-category="programming">
+            <span class="tag">Programming</span>
+            <h3>Java Programming Exercises</h3>
+            <p>
+              Practised Java fundamentals, conditional statements, methods, and GUI programming
+              through coursework exercises.
+            </p>
+          </article>
+
+          <article class="card project-card" data-category="programming">
+            <span class="tag">Programming</span>
+            <h3>Educational Learning App</h3>
+            <p>
+              Worked on a group application concept with gamification features, including
+              experience points, levels, and badges.
+            </p>
+          </article>
+
+          <article class="card project-card" data-category="web">
+            <span class="tag">Web</span>
+            <h3>Personal Homepage</h3>
+            <p>
+              Created a basic HTML page to practise page structure, headings, links, and
+              content organisation.
+            </p>
+          </article>
+
+          <article class="card project-card" data-category="security">
+            <span class="tag">Cybersecurity</span>
+            <h3>Password Guessing Attacks Report</h3>
+            <p>
+              Explored password-guessing risks and discussed protective measures such as
+              multi-factor authentication and detection.
+            </p>
+          </article>
+
+          <article class="card project-card" data-category="activities">
+            <span class="tag">Activities</span>
+            <h3>Student Programme Organisation</h3>
+            <p>
+              Developed leadership, coordination, and teamwork through student activities and
+              programme responsibilities.
+            </p>
+          </article>
+
+          <article class="card project-card" data-category="activities">
+            <span class="tag">Activities</span>
+            <h3>Performance &amp; Cultural Activities</h3>
+            <p>
+              Participated in cultural and college activities, gaining experience in
+              collaboration and performing as part of a team.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">© 2026 Vanessa Jeffery · Personal Portfolio</div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
