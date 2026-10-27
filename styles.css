@@ -389,6 +389,65 @@ h1 {
   resize: vertical;
 }
 
+/* ---------- Contact info cards ---------- */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+/* The whole card is one big clickable link */
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.14);
+}
+
+/* Round icon badge */
+.contact-icon {
+  flex-shrink: 0; /* keep the circle from squashing on small screens */
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--pale-blue);
+  font-size: 1.2rem;
+}
+
+.contact-text {
+  display: grid;
+  min-width: 0; /* lets long text wrap instead of overflowing */
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+.contact-value {
+  font-weight: 700;
+  color: var(--heading);
+  overflow-wrap: anywhere; /* long email addresses wrap on phones */
+}
+
 .form-message {
   color: var(--heading);
   font-weight: 700;
